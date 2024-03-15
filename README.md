@@ -6,7 +6,11 @@ wbc differential web application is a web application for differential analysis 
 
 in the part of web application, you can upload whole blood count data and get differential analysis result.
 
-Detectron 2 is a framework for object detection.
+
+## Before and after
+
+![before](https://raw.githubusercontent.com/jaehakimm/Differential-Count-WBC-/main/static/uploads/BA_38489_jpg.rf.2109095ae8a9b94586cf55a6e8e8c5e5.jpg?token=GHSAT0AAAAAACPDZQ65OKC7EDHAAAVZB4AYZPTZ7SQ)
+![after](https://raw.githubusercontent.com/jaehakimm/Differential-Count-WBC-/main/static/uploads/predicted_BA_38489_jpg.rf.2109095ae8a9b94586cf55a6e8e8c5e5.jpg?token=GHSAT0AAAAAACPDZQ65UMSQSGYX5UVRO6QKZPT2ALQ)
 
 ## Installation
 
