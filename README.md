@@ -1,4 +1,4 @@
-## Nabeeai.com
+## Nabeeai
 
 ## WBC differential Object detection web application (Detectron 2)
 
