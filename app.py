@@ -20,16 +20,8 @@ def configure_detectron2():
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/retinanet_R_101_FPN_3x.yaml"))
     cfg.DATASETS.TRAIN = ("my_dataset_train",)
     cfg.DATASETS.TEST = ("my_dataset_val",)
-    cfg.DATALOADER.NUM_WORKERS = 4 
-    cfg.SOLVER.IMS_PER_BATCH = 4
-    cfg.SOLVER.BASE_LR = 0.001
-    cfg.SOLVER.WARMUP_ITERS = 1000
-    cfg.SOLVER.MAX_ITER = 2000
-    cfg.SOLVER.STEPS = (800, 1600)
-    cfg.SOLVER.GAMMA = 0.05
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 64
     cfg.MODEL.RETINANET.NUM_CLASSES = 8
-    cfg.TEST.EVAL_PERIOD = 500
     cfg.MODEL.WEIGHTS = "modules\model_final.pth"
     cfg.DATASETS.TEST = ("my_dataset_test", )
     cfg.MODEL.RETINANET.SCORE_THRESH_TEST = 0.5
