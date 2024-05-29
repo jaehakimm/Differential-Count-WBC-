@@ -16,7 +16,7 @@ app = Flask(__name__)
 def configure_detectron2():
     setup_logger()
     cfg = get_cfg()
-    cfg.MODEL.DEVICE='cpu'
+    cfg.MODEL.DEVICE='cuda'
     cfg.merge_from_file(model_zoo.get_config_file("COCO-Detection/retinanet_R_101_FPN_3x.yaml"))
     cfg.DATASETS.TRAIN = ("my_dataset_train",)
     cfg.DATASETS.TEST = ("my_dataset_val",)
